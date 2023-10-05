@@ -89,13 +89,13 @@ npm dev
 ## Screenshots
 
 - Sign In Page
-![Sign In Page](../screenshots/1.png)
+![Sign In Page](./screenshots/1.png)
 - Sign Up Page
-![Sign Up Page](../screenshots/2.png)
+![Sign Up Page](./screenshots/2.png)
 - Apod Page showing Daily Image
-![Apod Page showing Daily Image](../screenshots/3.png)
+![Apod Page showing Daily Image](./screenshots/3.png)
 - Apod Page Showing Details such as Title, Date and Explanation of Image
-![Apod Page Showing Details](../screenshots/4.png)
+![Apod Page Showing Details](./screenshots/4.png)
 
 
 
