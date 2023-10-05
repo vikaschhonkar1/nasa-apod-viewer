@@ -109,8 +109,8 @@ The main challenge that I have face during the development of the project is in 
 ## Acknowledgments
 
 I would like to express our gratitude to:
-- NASA: Acknowledge NASA for providing the APOD API and the stunning images.
+- NASA for providing the APOD API and the stunning images.
 
-- Open Source Community: Thankful to the open-source community for the valuable tools and libraries used in building the application.
+- Open-source community for the valuable tools and libraries used in building the application.
 
-- Online Resources: Most importantly 
+- and other Online Resources including the official documentation.
