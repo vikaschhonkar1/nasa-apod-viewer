@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# NASA APOD Viewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About The Project
 
-## Available Scripts
+The NASA APOD (Astronomy Picture of the Day) Viewer is a single-page web application that lets users explore the cosmos by providing daily APOD images from NASA. Users can sign up, access protected routes, and view stunning images of the universe. This project combines frontend and backend technologies to create an engaging and informative experience for space enthusiasts.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Signup and Sign In :** Users can sign up for an account, and their data is securely stored in a MongoDB database.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Protected Routes:** The application has protected routes that ensure only authorized users can access certain content, such as the daily APOD image.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Daily APOD:** Users can view the Astronomy Picture of the Day directly from NASA's collection.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Image Details:** Detailed information about each APOD image is available, including its title, date, and description.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React: A JavaScript library for building user interfaces.
+- CSS: For styling and layout.
+- React Router: To handle client-side routing.
+- Axios: For making HTTP requests to the backend.
 
-### `npm run eject`
+### Backend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Express: Node JS framework for making the robust apis.
+- Axios: For making HTTP requests to external APIs.
+- Bcrypt: For password hashing and user authentication.
+- Joi: For data validation and schema definition.
+- JSON Web Tokens (JWT): For user authentication and authorization.
+- MongoDB: As the database to persistently store user data.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run the NASA APOD Viewer on your local machine, follow these steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Frontend
 
-## Learn More
+1. Navigate to the `frontend` directory.
+2. Create a `.env` file with the following content:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```plaintext
+REACT_APP_SERVER_URL=YOUR_BACKEND_SERVER_URL
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Install the required dependencies:
 
-### Code Splitting
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Start the development server:
 
-### Analyzing the Bundle Size
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5. Open your web browser and visit `http://localhost:3000` to access the NASA APOD Viewer frontend.
 
-### Making a Progressive Web App
+### Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Navigate to the `backend` directory.
+2. Create a `.env` file with the following content:
 
-### Advanced Configuration
+```plaintext
+DB=YOUR_MONGODB_URI
+JWTPRIVATEKEY=YOUR_JWT_PRIVATE_KEY
+NASA_API_KEY=YOUR_NASA_API_KEY
+SALT=YOUR_SALT_VALUE
+CLIENT_URL=YOUR_CLIENT_URL
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. Install the required dependencies:
 
-### Deployment
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+4. Start the backend server:
 
-### `npm run build` fails to minify
+```bash
+npm dev 
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Screenshots
+
+- Sign In Page
+![Sign In Page](../screenshots/1.png)
+- Sign Up Page
+![Sign Up Page](../screenshots/2.png)
+- Apod Page showing Daily Image
+![Apod Page showing Daily Image](../screenshots/3.png)
+- Apod Page Showing Details such as Title, Date and Explanation of Image
+![Apod Page Showing Details](../screenshots/4.png)
+
+
+
+## Challenges and Solutions
+
+The main challenge that I have face during the development of the project is in implementing a secure user authentication system and ensuring that only authorized users can access protected routes.
+  - I Used JSON Web Tokens (JWT) for secure user authentication and authorization.
+  - Then Created middleware that checks for a valid JWT token on protected routes.
+
+
+## Acknowledgments
+
+I would like to express our gratitude to:
+- NASA: Acknowledge NASA for providing the APOD API and the stunning images.
+
+- Open Source Community: Thankful to the open-source community for the valuable tools and libraries used in building the application.
+
+- Online Resources: Most importantly 
