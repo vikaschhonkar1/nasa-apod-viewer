@@ -1,0 +1,31 @@
+.apod-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-container {
+  margin-bottom: 20px;
+}
+
+.apod-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.date {
+  font-size: 16px;
+  color: #888;
+}
+
+.explanation {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: justify;
+}
